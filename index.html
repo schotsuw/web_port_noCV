@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portforlio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Saran Chotsuwan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Create a hamburger menu-->
+    <!--use nav to navigate the user-->
+    <nav id="hamburger-nav">
+        <div class="logo">Saran Chotsuwan</div>
+        <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <!--profile pic section-->
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Saran profile pic" id="my-pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text__p1">Hello, I'm</p>
+            <h1 class="title">Saran Chotsuwan</h1>
+            <p class="section_text__p2">Software Enigeering Student</p>
+            <div class="btn-contianer">
+                <!--add resume and transcirpt and cover letter-->
+                <button class="btn btn-color-2" onclick="window.open('./assets/New_Software_Resume_2024.pdf')">
+                  Resume
+              </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://linkedin.com/in/saran-chotsuwan-18a109296'">
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/schotsuw?tab=overview&from=2023-12-01&to=2023-12-31'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <!--add another image-->
+                <img src="./assets/profile-pic3.JPG" alt="profile-pic"  id="my-pic"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/customer-experience.png"
+                            alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p class="text-about">Teaching Assistant</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                            alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p class="text-about">Bachelor of Science in Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="intro">
+                      Hello! I'm Saran Chotsuwan, but you can call me Ohm. I REALLY love cat.
+                      Currently in my third year studying Software Engineering, I have a passion for coding, socializing, powerlifting, and cooking. 
+                      I thrive on trying and learning new things, and at the moment, I'm diving into Frontend development as well as Backend, and Olympic weightlifting. 
+                      My all time motto is 'Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.'
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down-arrow-sketch.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text__p1">Explore Me</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/js-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/sql-server.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/js-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/pyhon-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/c-icon.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/git-icon.jpg" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down-arrow-sketch.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project1.jpg" alt="Project 1" class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Smart Light Swicth</h2>
+              <p>This project was built to help the user conserve the energy from not turning the light off
+                or on too much.
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/schotsuw/project_ece2021/tree/main'"
+                >
+                  Github
+                </button>
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://code.brilliantlabs.ca/#editor'"
+              >
+                Live Demo
+              </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Space shooting with celebreties</h2>
+              <p>A Space Invader Game made in Python</p>
+              <p>Unfortunately, I tried to deploy it by pygbag, yet it seemed to have unknown problems.
+                I hope you could download the files and see how it looks like :))
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/schotsuw/Space_invader_celebrities/tree/main'"
+                >
+                  Github
+               
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">A simple texted-based Play list in Java</h2>
+              <p>
+                This little Java Project represents a basic text-based playlist application in linked lists, classes, and object-oriented programming. 
+                
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/schotsuw/playlist_texted_java'"
+                >
+                  Github
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/down-arrow-sketch.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+      </section>
+      <section id="contact">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/emails.png" alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="schotsuw@unb.ca">schotsuw@unb.ca</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://linkedin.com/in/saran-chotsuwan-18a109296'">
+            <p><a href="https://linkedin.com/in/saran-chotsuwan-18a109296">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
